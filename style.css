@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Julius+Sans+One&display=swap');
+
+@import url(./styles/header.css);
+@import url(./styles/home.css);
+@import url(./styles/destinies.css);
+@import url(./styles/about.css);
+@import url(./styles/contact.css);
+@import url(./styles/footer.css);
+
+:root {
+    --white: #f5f5f5;
+    --gray: #333;
+    --black: #222;
+    --highlight: #ba55d3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo Narrow';
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: none;
+}
+
+section {
+    padding: 110px 0 50px 0;
+    background: var(--black);
+}
+
+
+.logo i,
+h3 {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    background-color: transparent;
+    gap: 10px;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+.logo h3 {
+    font-family: 'Julius Sans One';
+}
+
+.logo i:hover {
+    transform: scale(1.05);
+}
+
+.short {
+    display: none;
+}
+
+
+.btn-default {
+    font-family: 'Archivo Narrow';
+    font-weight: bolder;
+    font-size: 20px;
+    width: 15vw;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--highlight);
+    color: var(--gray);
+    margin: 0;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+#send_btn {
+    background: var(--highlight);
+    color: var(--gray);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 50px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 6px 10px var(--black);
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+
+    }
+
+}
+
+.btn-topo {
+    z-index: 999;
+    position: fixed;
+    border: none;
+    background-color: transparent;
+    color: var(--highlight);
+    opacity: 50%;
+    padding: 10px;
+    font-size: 25px;
+    right: 2.5%;
+    bottom: 2.5%;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.interface {
+    width: 100%;
+    padding: 10px 8%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+
+}
+
+.section-title h1 {
+    color: var(--highlight);
+    font-family: 'Julius Sans One';
+    padding: 10px 0;
+    font-size: clamp(40px, 5vw, 120px);
+    font-weight: 800;
+    writing-mode: vertical-rl;
+}
+
+.section-subtitle h2 {
+    color: var(--white);
+    font-size: 20px;
+    text-wrap: wrap;
+    margin-left: 20px;
+}
+
+.section-subtitle.mobile {
+    display: none;
+}
+
+@media (max-width: 834px) {
+
+    section {
+        padding: 80px 0 50px 0;
+        background: var(--black);
+    }
+
+    .logo i,
+    .logo h3 {
+        font-size: 20px;
+        background-color: var(--black);
+    }
+
+    .short {
+        font-family: 'Julius Sans One';
+        letter-spacing: 5px;
+        display: block;
+        background-color: var(--black);
+    }
+
+    .logo h3 {
+        display: none;
+    }
+
+    .btn-default {
+        width: 50%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-title h1 {
+        font-size: 100px;
+        font-style: italic;
+        writing-mode: horizontal-tb;
+    }
+
+    .section-subtitle {
+        display: none;
+    }
+
+    .section-subtitle.mobile {
+        display: block;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 429px) {
+    .interface {
+        padding: 4%;
+    }
+
+    .section-title h1 {
+        font-size: 54px;
+    }
+}

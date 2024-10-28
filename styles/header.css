@@ -1,0 +1,172 @@
+#top {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+#navbar {
+    background-color: var(--black);
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px solid var(--gray);
+    height: 100px;
+}
+
+#navbar .logo {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.menu-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.nav-item a {
+    color: var(--white);
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    display: block;
+    transition: all .5s ease-in-out;
+}
+
+#navbar .nav-item a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background-color: var(--highlight);
+    transition: width .5s ease 0s, left .5s ease 0s;
+    width: 0;
+}
+
+#navbar .nav-item a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+/* Aplicar blur nos itens não hover */
+#nav_list:hover .nav-item:not(:hover) a {
+    filter: blur(2px);
+}
+
+/* Aplicar scale no item hover */
+.nav-item:hover a {
+    transform: scale(1.1);
+}
+
+/* Efeito para remover o blur ao sair do hover */
+#nav_list .nav-item a {
+    filter: none;
+}
+
+header #mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+/* Exibir o botão do menu móvel em telas menores */
+@media (max-width: 800px) {
+
+    #navbar {
+        height: 100px;
+        background-color: var(--black);
+    }
+
+    #navbar .btn-default,
+    #navbar .nav-item {
+        display: none;
+    }
+
+    header #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        color: var(--highlight);
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--black);
+        padding: 28px 8%;
+        border-radius: 0 0 50px 50px;
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        right: 0;
+        animation: slideDown 1s ease-in-out;
+        z-index: 2;
+    }
+
+    #mobile_menu.hide {
+        display: none;
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin: 20px 0;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+        width: 80%;
+        padding: 28px;
+        background-color: var(--gray);
+        border-radius: 20px;
+        transition: all .5s ease-in-out;
+    }
+
+    #mobile_nav_list .nav-item a {
+        font-size: clamp(12px, 2vw, 24px);
+        color: var(--white);
+        background-color: transparent;
+    }
+
+    .fa-x,
+    .fa-bars {
+        background-color: transparent;
+    }
+
+    .nav-item:hover a {
+        transform: scale(1.2);
+    }
+
+    @keyframes slideDown {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+}

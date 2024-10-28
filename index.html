@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>ATW</title>
+</head>
+
+<body>
+    <header id="top">
+        <nav id="navbar">
+            <a href="#top" class="logo" onclick="backToTop()">
+                <i class="fa-solid fa-globe">
+                    <h3 class="long">Around The World</h3>
+                    <div class="short">ATW</div>
+                </i>
+            </a>
+            <ul class="menu-list" id="nav_list">
+                <li class="nav-item">
+                    <a href="#destinies">Destinies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact">Contact</a>
+                </li>
+                <button id="contact-btn" class="btn-default"
+                    onclick="window.open('mailto:contact@atw.com?subject=Learn%20more%20about')">Let's Talk
+                </button>
+                <button id="mobile_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </ul>
+        </nav>
+        <div id="mobile_menu" class="hide">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#destinies">Destinies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <button id="contact-btn" class="btn-default"
+                onclick="window.open('mailto:contact@atw.com?subject=Learn%20more%20about')">Let's Talk
+            </button>
+        </div>
+    </header>
+    <section id="home">
+        <div class="interface">
+            <div class="container">
+                <div id="slider">
+                    <div class="slides">
+                        <div class="slider">
+                            <div class="legend"></div>
+                            <div class="content">
+                                <div class="content-txt">
+                                    <h2>Taj Mahal, India</h2>
+                                    <p>Discover the Taj Mahal, a breathtaking testament to love and artistry. This
+                                        marble
+                                        masterpiece, with its stunning domes and intricate details, stands as a symbol
+                                        of
+                                        India's rich history and beauty. Experience the magic of the Taj at sunrise or
+                                        sunset!</p>
+                                </div>
+                            </div>
+                            <div class="image"> <img src="./images/h-india.jpg"></div>
+                        </div>
+                        <div class="slider">
+                            <div class="legend"></div>
+                            <div class="content">
+                                <div class="content-txt">
+                                    <h2>Peyto Lake, Canada</h2>
+                                    <p>Immerse yourself in the stunning beauty of Peyto Lake, known for its vibrant
+                                        turquoise waters. Nestled in the Canadian Rockies, this glacier-fed lake offers
+                                        breathtaking views and incredible photo opportunities. A nature lover's
+                                        paradise!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="image"> <img src="./images/h-peyto.jpg"> </div>
+                        </div>
+                        <div class="slider">
+                            <div class="legend"></div>
+                            <div class="content">
+                                <div class="content-txt">
+                                    <h2>Lençóis Maranhenses, Brazil</h2>
+                                    <p>Explore the surreal landscapes of Lençóis Maranhenses, where endless white sand
+                                        dunes
+                                        meet crystal-clear lagoons. This unique natural wonder in Brazil offers a
+                                        mesmerizing and otherworldly experience, perfect for adventurers and
+                                        photographers
+                                        alike.</p>
+                                </div>
+                            </div>
+                            <div class="image"> <img src="./images/h-maranhenses.webp"> </div>
+                        </div>
+                        <div class="slider">
+                            <div class="legend"></div>
+                            <div class="content">
+                                <div class="content-txt">
+                                    <h2>Sequoia National Park, USA</h2>
+                                    <p>Wander among the giants at Sequoia National Park, home to the world's largest
+                                        trees.
+                                        Stand in awe beneath the towering sequoias and experience the tranquility of
+                                        this
+                                        magnificent forest. A true testament to nature's grandeur!</p>
+                                </div>
+                            </div>
+                            <div class="image"> <img src="./images/h-sequoia.webp"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="destinies">
+        <div class="interface">
+            <div class="section-info">
+                <div class="section-subtitle">
+                    <h2>Explore the most popular travel spots chosen by our experts. Whether you're seeking adventure,
+                        relaxation, or culture, these destinations promise unforgettable experiences.</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="section-title">
+                    <h1>Destinies</h1>
+                </div>
+                <div class="section-subtitle mobile">
+                    <h2>Explore the most popular travel spots chosen by our experts. Whether you're seeking adventure,
+                        relaxation, or culture, these destinations promise unforgettable experiences.</h2>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-side front">
+                            <img src="./images/kyoto1.jpg" alt="">
+                            <h1 class="destiny-name">Kyoto, Japan</h1>
+                            <h1 class="top-one">Most Visited</h1>
+                        </div>
+                        <div class="card-side back">
+                            <p>Package Price: Starting from <p2>$3500</p2> per person</p>
+                            <p>Duration: 8 nights</p>
+                            <p>Accommodation: Traditional ryokan (Japanese inn)</p>
+                            <p>Meals: Breakfast and traditional kaiseki dinners included</p>
+                            <p>Activities: Tea ceremony, visit to ancient temples and gardens, kimono experience</p>
+                            <p>Description: Immerse yourself in the rich culture and traditions of Kyoto, Japan's
+                                cultural heart. Stay in a traditional ryokan, explore ancient temples and tranquil
+                                gardens, and experience the art of tea ceremony. Discover the beauty of Japan's ancient
+                                capital and create lasting memories in this enchanting city.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-side front">
+                            <img src="./images/paris2.jpg" alt="">
+                            <h1 class="destiny-name">Paris, France</h1>
+                        </div>
+                        <div class="card-side back">
+                            <p>Package Price: Starting from <p2>$2500</p2> per person</p>
+                            <p>Duration: 5 nights</p>
+                            <p>Accommodation: Boutique hotel in the heart of Paris</p>
+                            <p>Meals: Breakfast included</p>
+                            <p>Activities: Guided city tours, visit to iconic landmarks (Eiffel Tower, Louvre Museum),
+                                gourmet dining experiences</p>
+                            <p>Description: Experience the romance and charm of Paris, the City of Light. Explore
+                                cobblestone streets, stroll along the Seine River, and marvel at world-famous art and
+                                architecture. From gourmet dining to cultural experiences, Paris offers a perfect blend
+                                of sophistication and joie de vivre.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-side front">
+                            <img src="./images/maldives1.jpg" alt="">
+                            <h1 class="destiny-name">Maldives</h1>
+                        </div>
+                        <div class="card-side back">
+                            <p>Package Price: Starting from <p2>$3000</p2> per person</p>
+                            <p>Duration: 7 nights</p>
+                            <p>Accommodation: Luxury beachfront villa</p>
+                            <p>Meals: Full board (breakfast, lunch, and dinner)</p>
+                            <p>Activities: Snorkeling, sunset cruises, spa treatments</p>
+                            <p>Description: Escape to the pristine beaches and crystal-clear waters of the Maldives.
+                                Indulge in luxurious accommodations, savor delicious cuisine, and immerse yourself in a
+                                paradise of relaxation and adventure. Whether you're seeking romance or adventure, the
+                                Maldives offers the perfect blend of luxury and natural beauty.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-side front">
+                            <img src="./images/borabora1.jpg" alt="">
+                            <h1 class="destiny-name">Bora Bora, French Polynesia</h1>
+                        </div>
+                        <div class="card-side back">
+                            <p>Package Price: Starting from <p2>$4000</p2> per person</p>
+                            <p>Duration: 7 nights</p>
+                            <p>Accommodation: Overwater bungalow</p>
+                            <p>Meals: Breakfast and dinner included</p>
+                            <p>Activities: Snorkeling, lagoon tours, spa treatments</p>
+                            <p>Description: Experience the ultimate tropical paradise in Bora Bora. Stay in luxurious
+                                overwater bungalows, enjoy crystal-clear lagoons, and immerse yourself in the serene
+                                beauty of this idyllic island. Perfect for a romantic getaway or an adventurous escape.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-side front">
+                            <img src="./images/santorini1.jpg" alt="">
+                            <h1 class="destiny-name">Santorini, Greece</h1>
+                        </div>
+                        <div class="card-side back">
+                            <p>Package Price: Starting from <p2>$2700</p2> per person</p>
+                            <p>Duration: 5 nights</p>
+                            <p>Accommodation: Cliffside hotel with caldera views</p>
+                            <p>Meals: Breakfast included</p>
+                            <p>Activities: Wine tasting, sunset cruises, guided tours of ancient ruins</p>
+                            <p>Description: Discover the stunning beauty of Santorini with its white-washed buildings
+                                and breathtaking sunsets. Enjoy luxurious accommodations, explore ancient ruins, and
+                                indulge in local wine and cuisine. Santorini offers a perfect blend of relaxation and
+                                cultural experiences.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-side front">
+                            <img src="./images/queenstown3.jpg" alt="">
+                            <h1 class="destiny-name">Queenstown, New Zealand</h1>
+                        </div>
+                        <div class="card-side back">
+                            <p>Package Price: Starting from <p2>$3500</p2> per person</p>
+                            <p>Duration: 6 nights</p>
+                            <p>Accommodation: Lakefront lodge</p>
+                            <p>Meals: Breakfast included</p>
+                            <p>Activities: Bungee jumping, jet boating, wine tours</p>
+                            <p>Description: Experience the adventure capital of the world in Queenstown. From thrilling
+                                bungee jumps to serene wine tours, Queenstown offers something for everyone. Enjoy
+                                stunning lake and mountain views, and create memories that will last a lifetime.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="destinies-contact">
+                <button id="contact-btn" class="btn-default"
+                    onclick="window.open('mailto:contact@atw.com?subject=Learn%20more%20about')">Let's Talk</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="interface">
+            <div class="container">
+                <div class="section-title">
+                    <h1>About Us</h1>
+                </div>
+                <div class="section-info">
+                    <img src=".//images/travel-about.jpg" alt="">
+                    <div class="section-subtitle">
+                        <h2>Welcome to Around The World, your ideal travel partner for creating unforgettable journeys.
+                            With
+                            a passion for exploration and cultural immersion, our goal is to deliver unique experiences
+                            that
+                            stay with you.
+                        </h2>
+                        <h2>Traveling with us is more than just visiting places; it’s about living moments, embracing
+                            new
+                            cultures, and discovering the extraordinary. Whether it’s a serene beach, an exciting
+                            adventure,
+                            or
+                            a cultural deep dive, we have the perfect package for you.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="section-list">
+                <div class="about-info">
+                    <h1>Our Values</h1>
+                    <ul>
+                        <li>
+                            <p2>Excellence:</p2> We strive to deliver the highest quality in every aspect of your travel
+                            experience, from accommodations to guided tours.
+                        </li>
+                        <li>
+                            <p2>Personalization:</p2> Each journey is uniquely tailored to meet your specific interests
+                            and preferences, ensuring a bespoke travel experience.
+                        </li>
+                        <li>
+                            <p2>Sustainability:</p2> We are committed to responsible travel practices that preserve the
+                            environment and support local communities.
+                        </li>
+                        <li>
+                            <p2>Passion:</p2> Our team is driven by a love for travel and a dedication to sharing the
+                            world's wonders with our clients.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="about-info">
+                    <h1>Why Choose Us?</h1>
+                    <ul>
+                        <li>
+                            <p2>Expert Knowledge:</p2> With years of experience and a deep understanding of global
+                            destinations, our travel experts are equipped to plan the perfect trip for you.
+                        </li>
+                        <li>
+                            <p2>Curated Experiences:</p2> From handpicked accommodations to exclusive tours and
+                            activities, we ensure every detail of your journey is meticulously planned.
+                        </li>
+                        <li>
+                            <p2>Customer Focus:</p2> Your satisfaction is our top priority. We offer 24/7 support and
+                            personalized service to address all your travel needs.
+                        </li>
+                        <li>
+                            <p2>Trusted Partners:</p2> We collaborate with reputable partners around the world to bring
+                            you safe, seamless, and memorable travel experiences.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="section-subtitle">
+                <h2>We don't just plan trips; we create personalized experiences that match your style. With
+                    handpicked
+                    stays and unique activities, every detail is designed to make your journey unforgettable.
+                    Wherever
+                    you dream of going, we’ll make it happen—easily and effortlessly.</h2>
+                <h2>Embark on a journey with Around The World and discover the magic that awaits. Let us turn
+                    your travel dreams into reality, one destination at a time.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="interface">
+            <div class="container">
+                <div class="section-title">
+                    <h1>Contact Us</h1>
+                </div>
+                <form action="#" method="post" class="contact-form">
+                    <ul class="noBullet">
+                        <li>
+                            <label for="name"></label>
+                            <input type="text" class="inputFields" name="name" id="name" placeholder="Your Name "
+                                value="">
+                        </li>
+                        <li>
+                            <label for="email"></label>
+                            <input type="email" name="email" id="email" class="inputFields" placeholder="Email ">
+                        </li>
+                        <li>
+                            <textarea name="message" id="message" placeholder="What's your dream vacation?"></textarea>
+                        </li>
+
+                    </ul>
+                    <li id="center_btn">
+                        <input type="submit" id="send_btn" name="send" alt="send" rows="5" value="Send Message">
+                    </li>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="interface">
+            <div class="container">
+                <a href="#top" class="logo" onclick="backToTop()">
+                    <i class="fa-solid fa-globe">
+                        <h3 class="long">Around The World</h3>
+                        <div class="short">ATW</div>
+                    </i>
+                </a>
+                <div class="footer-info">
+                    <a href="#" class="social-link" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <div class="contacts">
+                        <div class="contacts-phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+9999999">99999-9999</a>
+                        </div>
+                        <div class="contacts-mail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:contact@atw.com">contact@atw.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+    <button class="btn-topo"><i class="fa-solid fa-house" onclick="backToTop()"></i></button>
+</body>
+
+</html>

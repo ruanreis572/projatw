@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../proj-bfree"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "proj-atw"
+	}
+}

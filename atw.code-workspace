@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../testing-code"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "proj-atw"
+	}
+}
